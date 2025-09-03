@@ -1,0 +1,30 @@
+{
+  "name": "website-prometheus-obfuscator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laelmano24/website-prometheus-obfuscator.git"
+  },
+  "keywords": [],
+  "author": "Laelmano24",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Laelmano24/website-prometheus-obfuscator/issues"
+  },
+  "homepage": "https://github.com/Laelmano24/website-prometheus-obfuscator#readme",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

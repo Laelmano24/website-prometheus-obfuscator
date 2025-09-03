@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obfuscation screen</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    
+    <main class="container-obfuscation-screen" >
+
+        <h2>Obfuscation completed</h2>
+
+        <span class="obfuscated-content" ><%= content %></span>
+
+        <a class="element-button" id="download-button" href="#" download=<%= fileName %> >Download the obfuscated file</a>
+
+    </main>
+
+    <script src="/js/download-obfuscated.js" ></script>
+
+</body>
+</html>

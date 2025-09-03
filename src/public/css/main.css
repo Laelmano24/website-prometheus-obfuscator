@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+:root {
+    --bg-gradient-primary: #fa7e9f73;
+    --bg-gradient-secondary: #953f5673;
+    --btn-color: #fff;
+    --inpt-bg: #fa7287;
+    --inpt-bg-hover: #e15a6e;
+    --btn-bg: #ff6b81;
+    --btn-hover-bg: #ff4c61;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url("/assets/background.png") no-repeat center/cover;
+    height: 100dvh;
+    overflow: hidden;
+
+}
+
+body::after {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000066;
+    backdrop-filter: blur(4px);
+    z-index: -1;
+
+}
+
+.container-form-file, .container-obfuscation-screen, .container-message-log {
+
+    background: linear-gradient(80deg, var(--bg-gradient-primary), var(--bg-gradient-secondary));
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 800;
+    min-height: 120px;
+    max-width: 320px;
+    width: 80%;
+    min-width: 200px;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    gap: 20px;
+
+}
+
+.container-form-file h1 {
+
+    font-size: 20px;
+
+}
+
+.container-form-file label {
+
+    background: var(--inpt-bg);
+    color: var(--btn-color);
+    border: none;
+    font-size: 12px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.3s ease;
+
+}
+
+.container-message-log p {
+
+    color: #de0c0c;
+    font-size: 17px;
+    width: 90%;
+    text-align: justify;
+    
+
+}
+
+.obfuscated-content { display: none; }
+
+.container-form-file label:hover {
+
+    background: var(--inpt-bg-hover);
+
+}
+
+.container-form-file input[type="file"] {
+
+    display: none;
+
+}
+
+.container-form-file button, .element-button  {
+
+    background: var(--btn-bg);
+    color: var(--btn-color);
+    border: none;
+    font-size: 12px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    text-decoration: none;
+
+}
+
+.container-form-file button:hover, .element-button:hover {
+
+    background: var(--btn-hover-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+}

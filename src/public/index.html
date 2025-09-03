@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obfuscator Prometheus</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+    <form class="container-form-file" action="/obfuscation" method="post" enctype="multipart/form-data">
+
+        <h1>Obfuscator Prometheus</h1>
+        
+        <label for="id-file-input" id="id-file-label" >Choose a file to obfuscate</label>
+        <input type="file" name="file" id="id-file-input" >
+
+        <button type="submit">Obfuscate file</button>
+
+    </form>
+
+    <script src="/js/fileInput.js"></script>
+
+</body>
+</html>

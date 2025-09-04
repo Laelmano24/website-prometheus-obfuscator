@@ -1,8 +1,14 @@
-# 🔒 Prometheus Obfuscator
+# 🔒 Prometheus Obfuscator website
 
 This project is a **Lua script obfuscation website**, built with **Node.js** and based on the fork [Prometheus-Lua](https://github.com/prometheus-lua/Prometheus).
 
 The obfuscator’s logic is implemented in **pure Lua**, while **Node.js** serves as the backend for web interaction.
+
+---
+
+## ⚠️ Attention
+Make sure you have **Node.js** and **Lua** installed on your machine before running this project.  
+A **Dockerfile** will be provided soon to simplify deployment (e.g., on Render).
 
 ---
 

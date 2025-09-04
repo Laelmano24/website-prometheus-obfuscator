@@ -38,7 +38,19 @@ app.post("/obfuscation", upload.single("file"), (req, res) => {
 
         exec(`cd ${join(prometheusPath)} && lua ./cli.lua --preset Medium ./your_file.lua`, (err, stdout, stderr) => {
             
-            if ( err || stderr ) return res.render("messageError", { messageError: "Terminal command error" })
+            if ( err ) {
+
+                console.log("Error in function to run terminal\n " + err)
+                return res.render("messageError", { messageError: "Error in the function running in the terminal" })
+                
+            }
+
+            if ( stderr ) {
+
+                console.log("Error running in terminal\n " + stderr)
+                return res.render("messageError", { messageError: "Error running in terminal" })
+
+            }
 
             const contentObfuscator = readFileSync(join(prometheusPath, "your_file.obfuscated.lua"), "utf-8")
             if ( !contentObfuscator ) return res.render("messageError", { messageError: "Error reading obfuscated file" })

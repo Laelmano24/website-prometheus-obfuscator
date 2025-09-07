@@ -7,8 +7,7 @@ The obfuscator’s logic is implemented in **pure Lua**, while **Node.js** serve
 ---
 
 ## ⚠️ Attention
-Make sure you have **Node.js** and **Lua** installed on your machine before running this project.  
-A **Dockerfile** will be provided soon to simplify deployment (e.g., on Render).
+Make sure you have **Node.js** and **Lua** installed on your machine before running this project.
 
 ---
 
